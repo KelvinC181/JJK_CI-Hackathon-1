@@ -14,58 +14,67 @@
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 
-<body>
+<!-- body -->
+<!-- classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
+<body class="d-flex flex-column min-vh-100">
     <header>
-        
+
         <!-- Nav bar-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Random Jack</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">How to Play</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Play!</a>
-                  </li>
-                </ul>
-               
-              </div>
+                <a class="navbar-brand" href="#">Random Jack</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">How to Play</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Play!</a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
-          </nav>
+        </nav>
 
     </header>
 
     <main>
-        <!-- Hero + intro + how to play-->
 
-        <div>
-        
+        <!-- Hero + intro + how to play-->
+        <section id="intro-area">
+
             <div>
                 <img src="..." class="img-fluid" alt="...">
                 <h2> How to Play</h2>
                 <p> Start by choosing a number between 1 and 10!</p>
             </div>
 
-        </div>
+        </section>
 
-        <button type="button" class="btn btn-primary">Play</button>
+        <!-- play area -->
+        <section id="play-area" class="container text-center">
+
+            <button type="button" class="btn btn-primary" id="play-button">Play</button>
+
+        </section>
 
     </main>
 
     <!-- footer-->
 
-    <footer class="text-center p-3 bg-light">
+    <footer class="mt-auto text-center p-3 bg-light">
         © RandomJack2024
     </footer>
-    
+
 
 
 
