@@ -16,11 +16,12 @@
 
 <!-- body -->
 <!-- classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
+
 <body class="d-flex flex-column min-vh-100">
     <header>
 
         <!-- Nav bar-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Random Jack</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -52,10 +53,17 @@
         <!-- Hero + intro + how to play-->
         <section id="intro-area">
 
-            <div>
-                <img src="..." class="img-fluid" alt="...">
-                <h2> How to Play</h2>
-                <p> Start by choosing a number between 1 and 10!</p>
+            <div class="hero bg-light text-dark py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center"> 
+                            <img src="assets/images/randomjack.png" class="img-fluid w-25" alt="Random Jack Icon">
+
+                            <h1 class="display-4">How to Play</h1>
+                            <p class="lead">Start by choosing a number between 1 and 10!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -71,7 +79,7 @@
 
     <!-- footer-->
 
-    <footer class="mt-auto text-center p-3 bg-light">
+    <footer class="mt-auto text-center p-3 bg-light custom-footer">
         © RandomJack2024
     </footer>
 

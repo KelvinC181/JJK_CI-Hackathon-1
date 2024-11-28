@@ -85,3 +85,11 @@ main {
 #turn-counter p {
     margin: 0;
 }
+
+.custom-navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.custom-footer {
+    background-color: var(--primary-color) !important;
+}
