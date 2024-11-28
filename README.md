@@ -34,7 +34,7 @@
     <img src="assets/images/randomjack.png" alt="Random Jack Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Hackathon 1 - Front-end with HTML, CSS, and JavaScript</h3>
+<h3 align="center">Random Jack</h3>
 
   <p align="center">
     An interactive maths game to support those learning at Key Stage levels 1 & 2
@@ -85,7 +85,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `KelvinC181`, `JJK_CI-Hackathon-1`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `KelvinC181`, `JJK_CI-Hackathon-1`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Random Jack`, `An interactive maths game to support those learning at Key Stage levels 1 & 2`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
