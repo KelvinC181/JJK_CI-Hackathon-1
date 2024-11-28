@@ -13,34 +13,32 @@ const createGame = () => {
     document.getElementById('play-button').remove();
     //create html elements
     const gameArea = document.getElementById('play-area');
-    gameArea.innerHTML = `<section id="container">
-            <div class="row">
-                <div class="col-12 col-md-6 d-flex justify-content-center text-center">
-                    <div class="row">
-                        <div class="col-12">
-                            <input type="number" id="input-number">
-                        </div>
-                        <div class="col-12">
-                            <button type="button" class="btn btn-primary" id="submit-button">Submit</button>
-                        </div>
-                        <div class="col-12">
-                            <button type="button" class="btn btn-primary" id="reset-button">Reset</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-12 col-md-6 d-flex justify-content-center text-center">
-                    <div class="row">
-                        <div class="col-12">
-                            <p>Current Total: <span>0</span></p>
-                        </div>
-                        <div class="col-12">
-                            <p>turns: <span>5</span></p>
+    gameArea.innerHTML = `<div class="row">
+                    <div class="col-12 col-md-6 d-flex justify-content-center text-center my-3" id="input-area">
+                        <div class="row">
+                            <div class="col-12 my-3">
+                                <input type="number" id="input-number">
+                            </div>
+                            <div class="col-12 mb-3">
+                                <button type="button" class="btn btn-primary" id="submit-button">Submit</button>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <button type="button" class="btn btn-primary" id="reset-button">Reset</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>`;
+                    
+                    <div class="col-12 col-md-6 d-flex justify-content-center text-center my-3" id="display-area">
+                        <div class="row">
+                            <div class="col-12" id="score-counter">
+                                <p>Current Total: <span id="current-total">0</span></p>
+                            </div>
+                            <div class="col-12" id="turn-counter">
+                                <p>turns: <span id="turns-remaining">5</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
 }
 
 //add event listener to play button
