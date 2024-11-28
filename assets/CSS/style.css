@@ -13,12 +13,13 @@
     --secondary-font: "Fredoka", sans-serif;
 }
 
-/*makes the content in main always centered*/
+/*global styles*/
 html, body {
     height: 100%;
     margin: 0;
 }
 
+/*makes the content in main always centered*/
 main {
     display: flex;
     flex-direction: column;
