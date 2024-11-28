@@ -1,8 +1,7 @@
 //Play Button
-    //1.generate game html
-    //1.1. remove intro area
-    //1.2. remove play button
-    //1.3 create html elements
+//1.generate game html
+//1.1. remove intro area
+//1.2 create html elements
 //2. add event listener to play button to call the function
 
 
@@ -12,8 +11,6 @@
 const createGame = () => {
     //remove intro area
     document.getElementById('intro-area').remove();
-    //remove play button
-    document.getElementById('play-button').remove();
     //create html elements
     const gameArea = document.getElementById('play-area');
     gameArea.innerHTML = `<div class="row">
@@ -52,10 +49,10 @@ document.getElementById('play-button').addEventListener('click', createGame);
 
 //Game Phase 1
 //1. submit button
-    //1.1. generate random number
-    //1.2. get input value, check if input is valid
-    //1.3. if valid calculate difference of input number and generated number
-    //1.4. builds new content of input area
+//1.1. generate random number
+//1.2. get input value, check if input is valid
+//1.3. if valid calculate difference of input number and generated number
+//1.4. builds new content of input area
 //2. add event listener to submit button
 
 
@@ -84,6 +81,64 @@ const gamePhaseOne = () => {
                             <div class="col-12 mb-3">
                                 <button type="button" class="btn btn-primary" id="reset-button">Reset</button>
                             </div>
-                        </div>`;           
+                        </div>`;
+        //add event listener to add and subtract button
+        document.getElementById('addition-button').addEventListener('click', ()=> gamePhaseTwo(myRoll, 'addition'));
+        document.getElementById('subtract-button').addEventListener('click', ()=> gamePhaseTwo(myRoll, 'subtract'));
     }
+}
+
+//Add or Subtract(phase 2)
+//1. add event listener to add/subtract button
+//2  add/subtract myRoll value to current total
+//3. reduce turns remaining
+//4. determine if the game is over
+    //4.1 if turns remaining is 0, game over
+    //4.2 if current total is 21, win
+    //4.3 else return to game phase 1
+
+/**
+ * adds or subtracts myRoll value to the current total
+ * reduces turns remaining
+ * check for win/loss/continue
+ * takes action according to check
+ */
+const gamePhaseTwo = (myRoll, action) => {
+    //add or subtract myRoll value to current total
+    if (action === 'addition') { 
+        let currentTotal = parseInt(document.getElementById('current-total').innerText);
+        document.getElementById('current-total').innerText = currentTotal + myRoll;
+    } else if (action === 'subtract') {
+        let currentTotal = parseInt(document.getElementById('current-total').innerText);
+        document.getElementById('current-total').innerText = currentTotal - myRoll;
+    }
+
+    //reduce turns remaining
+    let turnsRemaining = parseInt(document.getElementById('turns-remaining').innerText);
+    document.getElementById('turns-remaining').innerText = --turnsRemaining;
+    let currentTotal = parseInt(document.getElementById('current-total').innerText);
+
+    if (currentTotal === '21') { //check for win
+        alert('You Win');
+        location.reload();
+    } else if (turnsRemaining === 0) { //check for loss
+        alert('Game Over');
+        location.reload();
+    } else { //return to game phase 1
+        const inputArea = document.getElementById('input-area');
+        inputArea.innerHTML = `<div class="row">
+            <div class="col-12 my-3">
+                <input type="number" id="input-number">
+            </div>
+            <div class="col-12 mb-3">
+                <button type="button" class="btn btn-primary" id="submit-button">Submit</button>
+            </div>
+            <div class="col-12 mb-3">
+                <button type="button" class="btn btn-primary" id="reset-button">Reset</button>
+            </div>
+        </div>
+    </div>`;
+
+    document.getElementById('submit-button').addEventListener('click', gamePhaseOne);//re-add event listener
+    };
 }
