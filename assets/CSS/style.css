@@ -95,6 +95,21 @@ main {
 }
 
 /*modals*/
+.modal-backdrop {
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal-backdrop.show {
+    display: block;
+}
+
 .modals {
     display: none;
     background-color: var(--background-color);
@@ -106,6 +121,7 @@ main {
     text-align: center;
     padding-top: 20px;
     color: var(--font-color);
+    z-index: 1000;
 }
 
 #win-modal {
@@ -151,3 +167,5 @@ main {
     cursor: pointer;
     color: var(--font-color);
 }
+
+

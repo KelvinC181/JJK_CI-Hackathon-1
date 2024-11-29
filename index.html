@@ -17,7 +17,7 @@
 <!-- body -->
 <!-- classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
 
-<body class="d-flex flex-column min-vh-100" id="full-background">
+<body class="d-flex flex-column min-vh-100">
     <header>
 
         <!-- Nav bar-->
@@ -76,18 +76,20 @@
         </section>
 
         <!-- modals -->
-        <div id="win-modal" class="modals">
-            <span class="close">X</span>
-            <P>You Won!</P>
-            <button type="button" class="btn btn-primary mb-2 play-again">Play Again</button>
-            <button type="button" class="btn btn-secondary main menu">Main Menu</button>                
-        </div>
+        <div class="modal-backdrop">
+            <div id="win-modal" class="modals">
+                <span class="close">X</span>
+                <P>You Won!</P>
+                <button type="button" class="btn btn-primary mb-2 play-again">Play Again</button>
+                <button type="button" class="btn btn-secondary main menu">Main Menu</button>                
+            </div>
 
-        <div id="lose-modal" class="modals">
-            <span class="close">X</span>
-            <P>GAME OVER</P>
-            <button type="button" class="btn mb-2 play-again">Play Again</button>
-            <button type="button" class="btn mb-2 main-menu">Main Menu</button>                
+            <div id="lose-modal" class="modals">
+                <span class="close">X</span>
+                <P>GAME OVER</P>
+                <button type="button" class="btn mb-2 play-again">Play Again</button>
+                <button type="button" class="btn mb-2 main-menu">Main Menu</button>                
+            </div>
         </div>    
         
         
