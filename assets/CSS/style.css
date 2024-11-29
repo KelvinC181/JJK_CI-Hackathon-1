@@ -101,6 +101,80 @@ main {
     font-family: var(--primary-font);
 }
 
+/*modals*/
+.modal-backdrop {
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal-backdrop.show {
+    display: block;
+}
+
+.modals {
+    display: none;
+    background-color: var(--background-color);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+    color: var(--font-color);
+    z-index: 1000;
+}
+
+#win-modal {
+    border: solid 3px var(--feature-color-1);
+}
+
+#lose-modal {
+    border: solid 3px var(--feature-color-2);
+}
+
+
+.play-again {
+    background-color: var(--feature-color-1);
+    border: solid 1px var(--feature-color-1);
+    color: var(--font-color);
+    width: 80%;
+}
+
+.play-again:hover {
+    background-color: var(--font-color);
+    border: solid 1px var(--font-color);
+    color: var(--background-color);
+}
+
+.main-menu {
+    background-color: var(--feature-color-2);
+    border: solid 1px var(--feature-color-2);
+    color: var(--font-color);
+    width: 80%;
+}
+
+.main-menu:hover {
+    background-color: var(--font-color);
+    border: solid 1px var(--font-color);
+    color: var(--background-color);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--font-color);
+}
+
 /* Footer */
 .custom-footer {
     background-color: var(--primary-color) !important;
