@@ -176,8 +176,27 @@ Below we will list our ways of working, features, design process, and wireframes
 
 ### Process 
 
-- We initally began by creating a Miro board to kickoff our project with a collaborative session - [Miro Board][miro-url].
-- 
+We initally began by creating a [Miro Board][miro-url] to kickoff our project with a collaborative session. Within the project kickoff session we covered: 
+<!-- HTML to place image and list items next to each other !-->
+<div style="display: flex;"> 
+  <div style="flex: 1;">
+    <p>
+      <ul>
+        <li>Creating the Miro Board</li>
+        <li>Defined the Project Overview</li>
+        <li>Brainstormed features</li>
+        <li>Mapped our Users</li>
+        <li>Mapped our User Stories</li>
+        <li>Created our Repository</li>
+        <li>Created our Project Board</li>
+      </ul>
+    </p>
+  </div>
+<div style="flex: 4; text-align: centre;"> 
+<!-- Your image goes here --> 
+  <img src="assets/images/ProjectKickoff.jpg" alt="Logo" width="300"> 
+</div> 
+</div>
 
 ### Wireframes
 
