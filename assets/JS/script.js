@@ -248,7 +248,6 @@ const closeModal = () => {
     }
     const background = document.querySelector(".modal-backdrop");
     background.classList.remove("show");
-    //reset game state
-    document.getElementById("current-total").innerText = 0;
-    document.getElementById("turns-remaining").innerText = 5;
+    //resets game if modal is closed
+    resetGame();
 }
