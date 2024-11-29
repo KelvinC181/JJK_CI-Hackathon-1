@@ -119,3 +119,27 @@ main {
 .hero {
     font-family: var(--primary-font);
 }
+
+.btn-orange {
+    background-color: #ff7f50;
+    /* Coral color */
+    color: white;
+}
+
+<style>.btn-orange {
+    background-color: #ff7f50;
+    /* Coral color */
+    color: white;
+}
+
+/* instructions button */
+.btn-orange:hover {
+    background-color: #ff6347;
+    /* Tomato color */
+    color: white;
+}
+
+#play-button {
+    font-size: 2.5rem;
+    padding: 10px 20px;
+}
