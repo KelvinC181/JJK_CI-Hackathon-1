@@ -54,7 +54,7 @@ const createGame = () => {
                                 <p>Current Total: <span id="current-total">0</span></p>
                             </div>
                             <div class="col-12" id="turn-counter">
-                                <p>turns: <span id="turns-remaining">5</span></p>
+                                <p>turns: <span id="turns-remaining">20</span></p>
                             </div>
                         </div>
                     </div>
@@ -140,7 +140,7 @@ const gamePhaseTwo = (myRoll, action) => {
     document.getElementById("turns-remaining").innerText = --turnsRemaining;
     let currentTotal = parseInt(document.getElementById("current-total").innerText);
 
-    if (currentTotal === "21") {//check for win
+    if (currentTotal === 21 ) {//check for win
         //show win modal
         showWinModal();
     } else if (turnsRemaining === 0) { //check for loss
@@ -172,18 +172,18 @@ const gamePhaseTwo = (myRoll, action) => {
 //1. add event listener to reset button
 //2. return gamestate to start
 //2.1. set current total to 0
-//2.2. set turns remaining to 5
+//2.2. set turns remaining to 20
 //2.3. return to game phase 1
 
 /**
  * sets currentTotal to 0
- * sets turns remaining to 5
+ * sets turns remaining to 20
  * returns to game phase 1
  */
 const resetGame = () => {
     //reset game state
     document.getElementById("current-total").innerText = 0;
-    document.getElementById("turns-remaining").innerText = 5;
+    document.getElementById("turns-remaining").innerText = 20;
     //rebuild input area
     const inputArea = document.getElementById("input-area");
     inputArea.innerHTML = `<div class="row">
@@ -224,7 +224,7 @@ const resetGame = () => {
 const showWinModal = () => {
     const modal = document.getElementById("win-modal");
     modal.style.display = "block";
-    const background = document.querySelector(".modal-backdrop");
+    const background = document.querySelector(".modal-overlay");
     background.classList.add("show");
 }
 
@@ -234,7 +234,7 @@ const showWinModal = () => {
 const showLoseModal = () => {
     const modal = document.getElementById("lose-modal");
     modal.style.display = "block";
-    const background = document.querySelector(".modal-backdrop");
+    const background = document.querySelector(".modal-overlay");
     background.classList.add("show");
 }
 
@@ -246,7 +246,7 @@ const closeModal = () => {
     for (let modal of modals) {
         modal.style.display = "none";
     }
-    const background = document.querySelector(".modal-backdrop");
+    const background = document.querySelector(".modal-overlay");
     background.classList.remove("show");
     //resets game if modal is closed
     resetGame();
