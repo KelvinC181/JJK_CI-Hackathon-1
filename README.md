@@ -81,11 +81,41 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About the Project
+<div align="center">
+<img src="assets/images/homepage.png" alt="Homepage image" width="600" align="center">
+</div>
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+### Project Overview
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This has been designed for the AI Augmented FullStack Bootcamp Hackathon 1 - Front-end with HTML, CSS, and JavaScript.
+
+For our MVP we have decided to create a responsive web based game using HTML, CSS, and JavaScript. This game is to support those learning maths at Key Stages 1 & 2.
+
+### What is it?
+
+A web based game targeted at those with maths abilities at the Key Stage 1 & 2 level. It will initially provide users with an interactive way to practice their mental arithmetic, specifically addition and subtraction.
+
+### High Level View
+
+- Appealing interface
+- Approachable and interactive maths game
+- Clear and readable documentation
+- Working MVP deployed
+
+### How does the game work?
+
+- The game functions by asking the user to enter a number between 0 and 10. 
+- Once they submit the number, JavaScript is used to calculate the difference between the user's entered number and a randomly generated number that's also between 0-10. 
+- The difference between those numbers are then presented back to the user as a positive integer and represents their roll. 
+- The user is then asked to add or subtract their roll from their current total. 
+- The current total starts at 0. 
+- The user then repeats this process with their new total and a newly entered number. 
+- The aim is to reach a total of 21 before they exceed 20 turns.
+
+### More information
+
+Further information on the design process, team structure, and ways of working are contained further into the README.md. 
 
 ### Built With
 
@@ -135,9 +165,12 @@ This is an example of how to list things you need to use the software and how to
 
 ## Design Process
 
+Below we will list our ways of working, features, design process, and wireframes.
+
 ### Process 
 
-- Project decisions
+- We initally began by creating a Miro board to kickoff our project - [Miro Board][miro-url]
+- 
 
 ### Wireframes
 
@@ -278,3 +311,4 @@ Project Link: [https://github.com/KelvinC181/JJK_CI-Hackathon-1](https://github.
 [html-url]: https://en.wikipedia.org/wiki/HTML
 [css-url]: https://en.wikipedia.org/wiki/CSS
 [js-url]: https://www.javascript.com/
+[miro-url]: https://miro.com/app/board/uXjVL_SVyms=/
