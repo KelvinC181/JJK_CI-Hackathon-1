@@ -40,8 +40,9 @@ const createGame = () => {
                     </div>
                 </div>`;
 
-    //add event listener to submit button
+    //add event listener to buttons
     document.getElementById('submit-button').addEventListener('click', gamePhaseOne);
+    document.getElementById('reset-button').addEventListener('click', resetGame);
 }
 
 //add event listener to play button
@@ -82,9 +83,10 @@ const gamePhaseOne = () => {
                                 <button type="button" class="btn btn-primary" id="reset-button">Reset</button>
                             </div>
                         </div>`;
-        //add event listener to add and subtract button
-        document.getElementById('addition-button').addEventListener('click', ()=> gamePhaseTwo(myRoll, 'addition'));
-        document.getElementById('subtract-button').addEventListener('click', ()=> gamePhaseTwo(myRoll, 'subtract'));
+        //add event listener to buttons
+        document.getElementById('addition-button').addEventListener('click', () => gamePhaseTwo(myRoll, 'addition'));
+        document.getElementById('subtract-button').addEventListener('click', () => gamePhaseTwo(myRoll, 'subtract'));
+        document.getElementById('reset-button').addEventListener('click', resetGame);
     }
 }
 
@@ -93,9 +95,9 @@ const gamePhaseOne = () => {
 //2  add/subtract myRoll value to current total
 //3. reduce turns remaining
 //4. determine if the game is over
-    //4.1 if turns remaining is 0, game over
-    //4.2 if current total is 21, win
-    //4.3 else return to game phase 1
+//4.1 if turns remaining is 0, game over
+//4.2 if current total is 21, win
+//4.3 else return to game phase 1
 
 /**
  * adds or subtracts myRoll value to the current total
@@ -105,7 +107,7 @@ const gamePhaseOne = () => {
  */
 const gamePhaseTwo = (myRoll, action) => {
     //add or subtract myRoll value to current total
-    if (action === 'addition') { 
+    if (action === 'addition') {
         let currentTotal = parseInt(document.getElementById('current-total').innerText);
         document.getElementById('current-total').innerText = currentTotal + myRoll;
     } else if (action === 'subtract') {
@@ -139,6 +141,44 @@ const gamePhaseTwo = (myRoll, action) => {
         </div>
     </div>`;
 
-    document.getElementById('submit-button').addEventListener('click', gamePhaseOne);//re-add event listener
+        //re-add event listeners to buttons
+        document.getElementById('submit-button').addEventListener('click', gamePhaseOne);
+        document.getElementById('reset-button').addEventListener('click', resetGame);
     };
+}
+
+//resetting the game
+//1. add event listener to reset button
+//2. return gamestate to start
+//2.1. set current total to 0
+//2.2. set turns remaining to 5
+//2.3. return to game phase 1
+
+/**
+ * sets currentTotal to 0
+ * sets turns remaining to 5
+ * returns to game phase 1
+ */
+const resetGame = () => {
+    //reset game state
+    document.getElementById('current-total').innerText = 0;
+    document.getElementById('turns-remaining').innerText = 5;
+    //rebuild input area
+    const inputArea = document.getElementById('input-area');
+    inputArea.innerHTML = `<div class="row">
+        <div class="col-12 my-3">
+            <input type="number" id="input-number">
+        </div>
+        <div class="col-12 mb-3">
+            <button type="button" class="btn btn-primary" id="submit-button">Submit</button>
+        </div>
+        <div class="col-12 mb-3">
+            <button type="button" class="btn btn-primary" id="reset-button">Reset</button>
+        </div>
+    </div>
+</div>`;
+
+    //re-add event listener to buttons
+    document.getElementById('submit-button').addEventListener('click', gamePhaseOne);
+    document.getElementById('reset-button').addEventListener('click', resetGame);
 }
