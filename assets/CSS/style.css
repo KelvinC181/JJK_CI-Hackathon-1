@@ -102,7 +102,7 @@ main {
 }
 
 /*modals*/
-.modal-backdrop {
+.modal-overlay {
     position: fixed;
     display: none;
     left: 0;
@@ -113,7 +113,7 @@ main {
     z-index: 999;
 }
 
-.modal-backdrop.show {
+.modal-overlay.show {
     display: block;
 }
 
