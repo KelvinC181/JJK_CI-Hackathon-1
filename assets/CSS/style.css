@@ -3,18 +3,25 @@
 
 /*css variables*/
 :root {
-    --primary-color:#FFA500; /*orange*/
-    --secondary-color: #32CD32; /*lime green*/
-    --feature-color-1: #1E90FF; /*light blue*/
-    --feature-color-2: #ff6347; /*light red*/
-    --background-color: #ffffff; /*white*/
-    --font-color: #2F4F4F; /*dark gray*/
+    --primary-color: #FFA500;
+    /*orange*/
+    --secondary-color: #32CD32;
+    /*lime green*/
+    --feature-color-1: #1E90FF;
+    /*light blue*/
+    --feature-color-2: #ff6347;
+    /*light red*/
+    --background-color: #ffffff;
+    /*white*/
+    --font-color: #2F4F4F;
+    /*dark gray*/
     --primary-font: "Comic Sans MS", sans-serif;
     --secondary-font: "Fredoka", sans-serif;
 }
 
 /*global styles*/
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -25,7 +32,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 60vh;
 }
 
 /*game-area*/
@@ -88,8 +95,25 @@ main {
 
 .custom-navbar {
     background-color: var(--primary-color) !important;
+    font-family: var(--primary-font);
 }
 
 .custom-footer {
     background-color: var(--primary-color) !important;
+    font-family: var(--primary-font);
+    /* sticky footer */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.introduction {
+    font-family: var(--secondary-font);
+    margin-top: 20px;
+}
+
+.hero {
+    font-family: var(--primary-font);
 }
