@@ -135,14 +135,20 @@ This is an example of how to list things you need to use the software and how to
 
 ## Design Process
 
-### Process
+### Process 
 
-
+- Project decisions
 
 ### Wireframes
 
+- Add in wireframes
+
 ### Articial Intelligence Usage
 
+- Reflection on key decisions where AI was used focussing on outcomes
+- AI's involvement in Bug identification and resolutions
+- AI role in performance and UX improvements
+- Insights into how AI influenced workflow, focusing on efficiency and outcomes
 
 <!-- Usage EXAMPLES -->
 ## Usage
