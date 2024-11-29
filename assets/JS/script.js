@@ -1,14 +1,11 @@
-//Play Button
-//1.generate game html
-//1.1. remove intro area
-//1.2 create html elements
-//2. add event listener to play button to call the function
-
-//set buttons
+/**
+ * sets event listeners for modal buttons
+ */
 const setButtons = () => {
     const playAgain = document.getElementsByClassName('play-again');
     for (let button of playAgain) {
         button.addEventListener('click', resetGame);
+        button.addEventListener('click', closeModal);
     };
     const mainMenu = document.getElementsByClassName('main-menu');
     for (let button of mainMenu) {
@@ -21,6 +18,12 @@ const setButtons = () => {
 }
 
 document.addEventListener('DOMContentLoaded', setButtons);
+
+//Play Button
+//1.generate game html
+//1.1. remove intro area
+//1.2 create html elements
+//2. add event listener to play button to call the function
 
 /**
  * Creates the html elements for the game
@@ -137,12 +140,10 @@ const gamePhaseTwo = (myRoll, action) => {
     document.getElementById('turns-remaining').innerText = --turnsRemaining;
     let currentTotal = parseInt(document.getElementById('current-total').innerText);
 
-    if (currentTotal === '21') { //check for win
-        alert('You Win');
+    if (currentTotal === '21') {//check for win
         //show win modal
         showWinModal();
     } else if (turnsRemaining === 0) { //check for loss
-        alert('Game Over');
         //show lose modal
         showLoseModal();
     } else { 
@@ -242,5 +243,3 @@ const closeModal = () => {
         modal.style.display = 'none';
     }
 }
-
-
