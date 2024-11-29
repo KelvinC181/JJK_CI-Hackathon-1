@@ -85,11 +85,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `KelvinC181`, `JJK_CI-Hackathon-1`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Random Jack`, `An interactive maths game to support those learning at Key Stage levels 1 & 2`
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
@@ -99,8 +95,6 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 * [JavaScript][js-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -139,9 +133,18 @@ This is an example of how to list things you need to use the software and how to
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Design Process
+
+### Process
 
 
-<!-- USAGE EXAMPLES -->
+
+### Wireframes
+
+### Articial Intelligence Usage
+
+
+<!-- Usage EXAMPLES -->
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
