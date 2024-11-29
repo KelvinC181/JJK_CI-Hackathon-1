@@ -81,23 +81,57 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About the Project
+<div align="center">
+<img src="assets/images/homepage.png" alt="Homepage image" width="600" align="center">
+</div>
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+### Project Overview
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `KelvinC181`, `JJK_CI-Hackathon-1`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Random Jack`, `An interactive maths game to support those learning at Key Stage levels 1 & 2`
+This has been designed for the AI Augmented FullStack Bootcamp Hackathon 1 - Front-end with HTML, CSS, and JavaScript.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+For our MVP we have decided to create a responsive web based game using HTML, CSS, and JavaScript. This game is to support those learning maths at Key Stages 1 & 2.
 
+### What is it?
 
+A web based game targeted at those with maths abilities at the Key Stage 1 & 2 level. It will initially provide users with an interactive way to practice their mental arithmetic, specifically addition and subtraction.
+
+### High Level View
+
+- Appealing interface
+- Approachable and interactive maths game
+- Clear and readable documentation
+- Working MVP deployed
+
+### How does the game work?
+
+- The game functions by asking the user to enter a number between 0 and 10. 
+- Once they submit the number, JavaScript is used to calculate the difference between the user's entered number and a randomly generated number that's also between 0-10. 
+- The difference between those numbers are then presented back to the user as a positive integer and represents their roll. 
+- The user is then asked to add or subtract their roll from their current total. 
+- The current total starts at 0. 
+- The user then repeats this process with their new total and a newly entered number. 
+- The aim is to reach a total of 21 before they exceed 20 turns.
+
+### Key Dates
+
+- Project Prep Day: 2024/11/27
+- Project Start Date: 2024/11/28
+- Project Deadline: 2024/12/2 @ 5pm
+- Project Presentation: 2024/12/3 @12pm
+
+### More information
+
+Further information on the design process, team structure, and ways of working are contained further into the <a href="#design-process">README.md</a>.
 
 ### Built With
 
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [HTML][html-url]
+* [CSS][css-url]
+* [JavaScript][js-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -136,9 +170,46 @@ This is an example of how to list things you need to use the software and how to
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Design Process
+<a id= "design-process"></a>
+Below we will list our ways of working, features, design process, and wireframes.
 
+### Process 
 
-<!-- USAGE EXAMPLES -->
+We initally began by creating a [Miro Board][miro-url] to kickoff our project with a collaborative session. Within the project kickoff session we covered: 
+<!-- HTML to place image and list items next to each other !-->
+<div style="display: flex;"> 
+  <div style="flex: 1;">
+    <p>
+      <ul>
+        <li>Creating the Miro Board</li>
+        <li>Defined the Project Overview</li>
+        <li>Brainstormed features</li>
+        <li>Mapped our Users</li>
+        <li>Mapped our User Stories</li>
+        <li>Created our Repository</li>
+        <li>Created our Project Board</li>
+      </ul>
+    </p>
+  </div>
+<div style="flex: 4; text-align: centre;"> 
+<!-- Your image goes here --> 
+  <img src="assets/images/ProjectKickoff.jpg" alt="Logo" width="300"> 
+</div> 
+</div>
+
+### Wireframes
+
+- Add in wireframes
+
+### Articial Intelligence Usage
+
+- Reflection on key decisions where AI was used focussing on outcomes
+- AI's involvement in Bug identification and resolutions
+- AI role in performance and UX improvements
+- Insights into how AI influenced workflow, focusing on efficiency and outcomes
+
+<!-- Usage EXAMPLES -->
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
@@ -263,3 +334,7 @@ Project Link: [https://github.com/KelvinC181/JJK_CI-Hackathon-1](https://github.
 [arithmetic-url]: https://github.com/users/KelvinC181/projects/8/views/1?pane=issue&itemId=89134257&issue=KelvinC181%7CJJK_CI-Hackathon-1%7C34
 [themes-url]: https://github.com/users/KelvinC181/projects/8/views/1?pane=issue&itemId=88880525&issue=KelvinC181%7CJJK_CI-Hackathon-1%7C8
 [lightdarkmode-url]: https://github.com/users/KelvinC181/projects/8/views/1?pane=issue&itemId=88877831&issue=KelvinC181%7CJJK_CI-Hackathon-1%7C4
+[html-url]: https://en.wikipedia.org/wiki/HTML
+[css-url]: https://en.wikipedia.org/wiki/CSS
+[js-url]: https://www.javascript.com/
+[miro-url]: https://miro.com/app/board/uXjVL_SVyms=/
