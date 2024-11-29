@@ -113,9 +113,16 @@ A web based game targeted at those with maths abilities at the Key Stage 1 & 2 l
 - The user then repeats this process with their new total and a newly entered number. 
 - The aim is to reach a total of 21 before they exceed 20 turns.
 
+### Key Dates
+
+- Project Prep Day: 2024/11/27
+- Project Start Date: 2024/11/28
+- Project Deadline: 2024/12/2 @ 5pm
+- Project Presentation: 2024/12/3 @12pm
+
 ### More information
 
-Further information on the design process, team structure, and ways of working are contained further into the README.md. 
+Further information on the design process, team structure, and ways of working are contained further into the <a href="#design-process">README.md</a>.
 
 ### Built With
 
@@ -164,12 +171,12 @@ This is an example of how to list things you need to use the software and how to
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Design Process
-
+<a id= "design-process"></a>
 Below we will list our ways of working, features, design process, and wireframes.
 
 ### Process 
 
-- We initally began by creating a Miro board to kickoff our project - [Miro Board][miro-url]
+- We initally began by creating a Miro board to kickoff our project with a collaborative session - [Miro Board][miro-url].
 - 
 
 ### Wireframes
