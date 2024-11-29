@@ -94,42 +94,44 @@ main {
     margin: 0;
 }
 
+/* Navbar */
 .custom-navbar {
     background-color: var(--primary-color) !important;
     font-family: var(--primary-font);
 }
 
+/* Footer */
 .custom-footer {
     background-color: var(--primary-color) !important;
     font-family: var(--primary-font);
-    /* sticky footer */
     position: fixed;
+    /* Sticky footer */
     bottom: 0;
     width: 100%;
     text-align: center;
     padding: 10px;
 }
 
+/* Introduction Section */
 .introduction {
     font-family: var(--primary-font);
-    /* margin-top: 10px; */
     color: var(--primary-color);
     background-color: var(--feature-color-1);
 }
 
+/* Hero Section */
 .hero {
     font-family: var(--primary-font);
 }
 
-/* instructions button */
+/* Instructions Button */
 .btn-orange {
-    background-color: #ff7f50;
-    /* Coral color */
+    background-color: var(--primary-color);
+    /* Use primary color variable */
     color: white;
 }
 
 .btn-orange:hover {
-    background-color: #ff6347;
-    /* Tomato color */
+    background-color: var(--feature-color-2);
     color: white;
 }
