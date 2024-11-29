@@ -3,18 +3,25 @@
 
 /*css variables*/
 :root {
-    --primary-color:#FFA500; /*orange*/
-    --secondary-color: #32CD32; /*lime green*/
-    --feature-color-1: #1E90FF; /*light blue*/
-    --feature-color-2: #ff6347; /*light red*/
-    --background-color: #ffffff; /*white*/
-    --font-color: #2F4F4F; /*dark gray*/
+    --primary-color: #FFA500;
+    /*orange*/
+    --secondary-color: #32CD32;
+    /*lime green*/
+    --feature-color-1: #1E90FF;
+    /*light blue*/
+    --feature-color-2: #ff6347;
+    /*light red*/
+    --background-color: #ffffff;
+    /*white*/
+    --font-color: #2F4F4F;
+    /*dark gray*/
     --primary-font: "Comic Sans MS", sans-serif;
     --secondary-font: "Fredoka", sans-serif;
 }
 
 /*global styles*/
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -25,7 +32,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 60vh;
+    margin-top: 0.5rem;
+    padding-bottom: 100px;
 }
 
 /*game-area*/
@@ -86,86 +95,60 @@ main {
     margin: 0;
 }
 
+/* Navbar */
 .custom-navbar {
     background-color: var(--primary-color) !important;
+    font-family: var(--primary-font);
 }
 
+/* Footer */
 .custom-footer {
     background-color: var(--primary-color) !important;
-}
-
-/*modals*/
-.modal-backdrop {
+    font-family: var(--primary-font);
     position: fixed;
-    display: none;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-.modal-backdrop.show {
-    display: block;
-}
-
-.modals {
-    display: none;
-    background-color: var(--background-color);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
+    /* Sticky footer */
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    padding-top: 20px;
-    color: var(--font-color);
-    z-index: 1000;
+    padding: 10px;
 }
 
-#win-modal {
-    border: solid 3px var(--feature-color-1);
-}
-
-#lose-modal {
-    border: solid 3px var(--feature-color-2);
-}
-
-
-.play-again {
+/* Introduction Section */
+.introduction {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
     background-color: var(--feature-color-1);
-    border: solid 1px var(--feature-color-1);
-    color: var(--font-color);
-    width: 80%;
 }
 
-.play-again:hover {
-    background-color: var(--font-color);
-    border: solid 1px var(--font-color);
-    color: var(--background-color);
+/* Hero Section */
+.hero {
+    font-family: var(--primary-font);
 }
 
-.main-menu {
+/* Instructions Button */
+.btn-orange {
+    background-color: var(--primary-color);
+    /* Use primary color variable */
+    color: white;
+}
+
+.btn-orange:hover {
     background-color: var(--feature-color-2);
-    border: solid 1px var(--feature-color-2);
-    color: var(--font-color);
-    width: 80%;
+    color: white;
 }
 
-.main-menu:hover {
-    background-color: var(--font-color);
-    border: solid 1px var(--font-color);
-    color: var(--background-color);
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    color: var(--font-color);
+/* Footer default font size for larger screens */
+.custom-footer p {
+    font-size: 1rem;
 }
 
 
+/* Ensure proper wrapping and spacing on smaller screens */
+.custom-footer .d-flex {
+    flex-wrap: wrap;
+}
+
+/* Add some margin to the bottom of the button for spacing */
+.custom-footer .btn-link {
+    margin-bottom: 10px;
+}
