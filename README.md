@@ -93,14 +93,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -159,10 +152,18 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] 1.0: MVP release - This will include the addition and subtraction functionality
+- [ ] 1.1: Add introduction and footer sections. This will include how to text and the disclaimer - [[User Story]][introduction-url]
+- [ ] 1.2: Add difficulty modes to increase game scope - [[User Story]][difficulty-url]
+    - [ ] Limit number of uses of each number entry
+    - [ ] Additional fail conditions
+- [ ] 1.3: Add multiplayer [[User Story]][multiplayer-url]
+- [ ] 1.4: Add additional arithmetic options [[User Story]][arithmetic-url]
+    - [ ] Multiplication
+    - [ ] Division
+- [ ] 1.5: Add theme selections [[User Story]][themes-url]
+    - [ ] Add light/dark mode [[User Story]][lightdarkmode-url]
+    - [ ] New skins to appeal to new game users
 
 See the [open issues](https://github.com/KelvinC181/JJK_CI-Hackathon-1/issues) for a full list of proposed features (and known issues).
 
@@ -256,3 +257,9 @@ Project Link: [https://github.com/KelvinC181/JJK_CI-Hackathon-1](https://github.
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[introduction-url]: https://github.com/users/KelvinC181/projects/8/views/1?pane=issue&itemId=88892010&issue=KelvinC181%7CJJK_CI-Hackathon-1%7C11
+[difficulty-url]: https://github.com/users/KelvinC181/projects/8/views/1?filterQuery=label%3A%22Could+Have%22&pane=issue&itemId=89128092&issue=KelvinC181%7CJJK_CI-Hackathon-1%7C31
+[multiplayer-url]: https://github.com/users/KelvinC181/projects/8/views/1?pane=issue&itemId=89130431&issue=KelvinC181%7CJJK_CI-Hackathon-1%7C33
+[arithmetic-url]: https://github.com/users/KelvinC181/projects/8/views/1?pane=issue&itemId=89134257&issue=KelvinC181%7CJJK_CI-Hackathon-1%7C34
+[themes-url]: https://github.com/users/KelvinC181/projects/8/views/1?pane=issue&itemId=88880525&issue=KelvinC181%7CJJK_CI-Hackathon-1%7C8
+[lightdarkmode-url]: https://github.com/users/KelvinC181/projects/8/views/1?pane=issue&itemId=88877831&issue=KelvinC181%7CJJK_CI-Hackathon-1%7C4
