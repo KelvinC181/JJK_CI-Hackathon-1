@@ -96,7 +96,7 @@ main {
 
 /*modals*/
 .modals {
-    /*display: none;*/
+    display: none;
     background-color: var(--background-color);
     position: fixed;
     top: 50%;

@@ -4,6 +4,23 @@
 //1.2 create html elements
 //2. add event listener to play button to call the function
 
+//set buttons
+const setButtons = () => {
+    const playAgain = document.getElementsByClassName('play-again');
+    for (let button of playAgain) {
+        button.addEventListener('click', resetGame);
+    };
+    const mainMenu = document.getElementsByClassName('main-menu');
+    for (let button of mainMenu) {
+        button.addEventListener('click', () => window.location.reload());
+    }
+    const close = document.getElementsByClassName('close');
+    for (let button of close) {
+        button.addEventListener('click', closeModal);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', setButtons);
 
 /**
  * Creates the html elements for the game
@@ -122,11 +139,14 @@ const gamePhaseTwo = (myRoll, action) => {
 
     if (currentTotal === '21') { //check for win
         alert('You Win');
-        location.reload();
+        //show win modal
+        showWinModal();
     } else if (turnsRemaining === 0) { //check for loss
         alert('Game Over');
-        location.reload();
-    } else { //return to game phase 1
+        //show lose modal
+        showLoseModal();
+    } else { 
+        //return to game phase 1
         const inputArea = document.getElementById('input-area');
         inputArea.innerHTML = `<div class="row">
             <div class="col-12 my-3">
@@ -182,3 +202,45 @@ const resetGame = () => {
     document.getElementById('submit-button').addEventListener('click', gamePhaseOne);
     document.getElementById('reset-button').addEventListener('click', resetGame);
 }
+
+//win and lose modals
+//1.detect which to trigger
+//2. unhide modal
+//3. modal elements
+//3.1. play again button
+//3.1.1 add event listener to play again button
+//3.1.2 reset game
+//3.2. main menu button
+//3.2.1 add event listener to main menu button
+//3.2.2 reload page
+//3.3. close modal button
+//3.3.1 add event listener to close modal button
+//3.3.2 hide modal
+
+/**
+ * shows the win modal
+ */
+const showWinModal = () => {
+    const modal = document.getElementById('win-modal');
+    modal.style.display = 'block';
+}
+
+/**
+ * shows the lose modal
+ */
+const showLoseModal = () => {
+    const modal = document.getElementById('lose-modal');
+    modal.style.display = 'block';
+}
+
+/**
+ * hides modals
+ */
+const closeModal = () => {
+    const modals = document.getElementsByClassName('modals');
+    for (let modal of modals) {
+        modal.style.display = 'none';
+    }
+}
+
+
