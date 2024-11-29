@@ -94,6 +94,9 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 ### Built With
 
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [HTML][html-url]
+* [CSS][css-url]
+* [JavaScript][js-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -263,3 +266,6 @@ Project Link: [https://github.com/KelvinC181/JJK_CI-Hackathon-1](https://github.
 [arithmetic-url]: https://github.com/users/KelvinC181/projects/8/views/1?pane=issue&itemId=89134257&issue=KelvinC181%7CJJK_CI-Hackathon-1%7C34
 [themes-url]: https://github.com/users/KelvinC181/projects/8/views/1?pane=issue&itemId=88880525&issue=KelvinC181%7CJJK_CI-Hackathon-1%7C8
 [lightdarkmode-url]: https://github.com/users/KelvinC181/projects/8/views/1?pane=issue&itemId=88877831&issue=KelvinC181%7CJJK_CI-Hackathon-1%7C4
+[html-url]: https://en.wikipedia.org/wiki/HTML
+[css-url]: https://en.wikipedia.org/wiki/CSS
+[js-url]: https://www.javascript.com/
