@@ -108,11 +108,16 @@
     <!-- footer-->
 
     <footer class="mt-auto text-center p-3 bg-light custom-footer">
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between flex-column flex-md-row">
             <p class="mb-0">© RandomJack2024</p>
-            <p class="mb-0">This game is designed for entertainment purposes only and does not intend to promote or represent gambling.</p>
+            <button class="btn btn-link d-md-none" data-bs-toggle="collapse" data-bs-target="#disclaimerText" aria-expanded="false" aria-controls="disclaimerText">Disclaimer</button>
+            <div class="collapse" id="disclaimerText">
+                <p class="mb-0">This game is designed for entertainment purposes only and does not intend to promote or represent gambling.</p>
+            </div>
+            <p class="mb-0 d-none d-md-block">This game is designed for entertainment purposes only and does not intend to promote or represent gambling.</p>
         </div>
     </footer>
+    
 
 
 

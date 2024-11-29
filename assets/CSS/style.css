@@ -136,3 +136,19 @@ main {
     background-color: var(--feature-color-2);
     color: white;
 }
+
+/* Footer default font size for larger screens */
+.custom-footer p {
+    font-size: 1rem;
+}
+
+
+/* Ensure proper wrapping and spacing on smaller screens */
+.custom-footer .d-flex {
+    flex-wrap: wrap;
+}
+
+/* Add some margin to the bottom of the button for spacing */
+.custom-footer .btn-link {
+    margin-bottom: 10px;
+}
