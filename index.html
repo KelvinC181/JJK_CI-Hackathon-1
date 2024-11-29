@@ -23,7 +23,7 @@
         <!-- Nav bar-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Random Jack</a>
+                <a class="navbar-brand" href="#">Random Jack <i class="fa-solid fa-dice"></i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -46,21 +46,49 @@
             </div>
         </nav>
 
+
+
+
+
+
     </header>
 
     <main>
 
-        <!-- Hero + intro + how to play-->
+        <!--how to play-->
         <section id="intro-area">
+
+            <!-- introduction -->
+            <div class="container text-center introduction">
+                <div class="hero-text">
+                    <h1>Welcome to Random Jack <i class="fa-solid fa-dice"></i></h1>
+                    <p>Challenge yourself</p>
+                </div>
+            </div>
 
             <div class="hero bg-light text-dark py-5">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 text-center"> 
+                        <div class="col-md-12 text-center">
                             <img src="assets/images/randomjack.png" class="img-fluid w-25" alt="Random Jack Icon">
 
-                            <h1 class="display-4">How to Play</h1>
-                            <p class="lead">Start by choosing a number between 1 and 10!</p>
+
+                            <div class="container mt-5">
+                                <h1 class="lead">How to Play</h1>
+                                <p class="fs-4">Start by choosing a number between 1 and 10!</p>
+
+                                <!-- See More button to toggle collapse -->
+                                <p><a class="btn btn-orange" data-bs-toggle="collapse" href="#moreInfo" role="button"
+                                        aria-expanded="false" aria-controls="moreInfo">See More</a></p>
+                                <!-- Collapsible content -->
+                                <div class="collapse" id="moreInfo">
+                                    <p class="fs-6">Random Jack will then give you a random number for your roll</p>
+                                    <p class="fs-6">Decide if you want to add or subtract the number from your score</p>
+                                    <p class="fs-6">Get your score to 20 before you run out of turns to win!</p>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -80,8 +108,16 @@
     <!-- footer-->
 
     <footer class="mt-auto text-center p-3 bg-light custom-footer">
-        © RandomJack2024
+        <div class="d-flex justify-content-between flex-column flex-md-row">
+            <p class="mb-0">© RandomJack2024</p>
+            <button class="btn btn-link d-md-none" data-bs-toggle="collapse" data-bs-target="#disclaimerText" aria-expanded="false" aria-controls="disclaimerText">Disclaimer</button>
+            <div class="collapse" id="disclaimerText">
+                <p class="mb-0">This game is designed for entertainment purposes only and does not intend to promote or represent gambling.</p>
+            </div>
+            <p class="mb-0 d-none d-md-block">This game is designed for entertainment purposes only and does not intend to promote or represent gambling.</p>
+        </div>
     </footer>
+    
 
 
 

@@ -3,18 +3,25 @@
 
 /*css variables*/
 :root {
-    --primary-color:#FFA500; /*orange*/
-    --secondary-color: #32CD32; /*lime green*/
-    --feature-color-1: #1E90FF; /*light blue*/
-    --feature-color-2: #ff6347; /*light red*/
-    --background-color: #ffffff; /*white*/
-    --font-color: #2F4F4F; /*dark gray*/
+    --primary-color: #FFA500;
+    /*orange*/
+    --secondary-color: #32CD32;
+    /*lime green*/
+    --feature-color-1: #1E90FF;
+    /*light blue*/
+    --feature-color-2: #ff6347;
+    /*light red*/
+    --background-color: #ffffff;
+    /*white*/
+    --font-color: #2F4F4F;
+    /*dark gray*/
     --primary-font: "Comic Sans MS", sans-serif;
     --secondary-font: "Fredoka", sans-serif;
 }
 
 /*global styles*/
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -25,7 +32,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 60vh;
+    margin-top: 0.5rem;
+    padding-bottom: 100px;
 }
 
 /*game-area*/
@@ -86,10 +95,60 @@ main {
     margin: 0;
 }
 
+/* Navbar */
 .custom-navbar {
     background-color: var(--primary-color) !important;
+    font-family: var(--primary-font);
 }
 
+/* Footer */
 .custom-footer {
     background-color: var(--primary-color) !important;
+    font-family: var(--primary-font);
+    position: fixed;
+    /* Sticky footer */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Introduction Section */
+.introduction {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    background-color: var(--feature-color-1);
+}
+
+/* Hero Section */
+.hero {
+    font-family: var(--primary-font);
+}
+
+/* Instructions Button */
+.btn-orange {
+    background-color: var(--primary-color);
+    /* Use primary color variable */
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: var(--feature-color-2);
+    color: white;
+}
+
+/* Footer default font size for larger screens */
+.custom-footer p {
+    font-size: 1rem;
+}
+
+
+/* Ensure proper wrapping and spacing on smaller screens */
+.custom-footer .d-flex {
+    flex-wrap: wrap;
+}
+
+/* Add some margin to the bottom of the button for spacing */
+.custom-footer .btn-link {
+    margin-bottom: 10px;
 }
