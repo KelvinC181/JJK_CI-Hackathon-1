@@ -258,6 +258,17 @@ For the code reviews, the code reviewer would:
 
 <img src="assets/images/copilotcodereview2.png" alt="Code review with review" width="800">
 
+### Testing
+
+We have adopted a test as you build, as well as using a final testing sweep of the deployed code
+
+Testing evidence is stored in the relevant issue tickets on our Project Board:
+
+[Validation Testing][validation-url] <br>
+[MVP Release Test Cases][MVP-url] <br>
+[Deployed Site Test Cases][deployedtesting-url] <br>
+
+
 
 ### Bug Identification
 
@@ -283,9 +294,7 @@ You can view all raised bugs found on the project on the [Bug Project Board][bug
 
 #### Outstanding Bugs on Release
 
-None at present
-
-- AI role in performance and UX improvements
+None open bugs at final deployment
 
 <!-- Usage EXAMPLES -->
 ## Usage
@@ -459,3 +468,6 @@ Project Link: [https://github.com/KelvinC181/JJK_CI-Hackathon-1](https://github.
 [kelvin-url]: https://github.com/KelvinC181
 [jamal-url]: https://github.com/jamalholt18
 [jeremy-url]: https://github.com/JeremyGreig
+[validation-url]: https://github.com/users/KelvinC181/projects/8/views/1?pane=issue&itemId=88875841&issue=KelvinC181%7CJJK_CI-Hackathon-1%7C2
+[MVP-url]: https://github.com/users/KelvinC181/projects/8/views/1?pane=issue&itemId=89341289&issue=KelvinC181%7CJJK_CI-Hackathon-1%7C42
+[deployedtesting-url]: https://github.com/users/KelvinC181/projects/8/views/1?pane=issue&itemId=89369214&issue=KelvinC181%7CJJK_CI-Hackathon-1%7C48
