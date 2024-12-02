@@ -83,7 +83,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About the Project
 <div align="center">
-<img src="assets/images/homepage.png" alt="Homepage image" width="600" align="center">
+<img src="assets/images/responsivescreenshot.png" alt="Homepage image" width="600" align="center">
 </div>
 
 ### Project Overview
@@ -126,7 +126,7 @@ Further information on the design process, team structure, and ways of working a
 
 ### Built With
 
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [Bootstrap.com][Bootstrap-url]
 * [HTML][html-url]
 * [CSS][css-url]
 * [JavaScript][js-url]
@@ -149,22 +149,17 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/KelvinC181/JJK_CI-Hackathon-1.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
+3. Change git remote url to avoid accidental pushes to base project
    ```sh
-   git remote set-url origin KelvinC181/JJK_CI-Hackathon-1
+   git remote set-url origin your_project
    git remote -v # confirm the changes
    ```
 
@@ -200,11 +195,41 @@ We initally began by creating a [Miro Board][miro-url] to kickoff our project wi
 
 ### Wireframes
 
-- Add in wireframes
+- We created a rough outline of our design within MIRO. We designed a desired state for MVP to demonstrate a target state for both the responsive and larger screen version of the page. The reasoning we took this approach was to allow us to begin coding as soon as possible, to then allow us to iterate our design once we had working code.
+
+  Clicking the screenshot below will take you to the Miro board.
+
+  <a href="https://miro.com/app/board/uXjVL_SVyms=/?moveToWidget=3458764608573906668&cot=14">
+    <img src="assets/images/wireframes2.png" alt="Wireframes" width="600">
+  </a>
 
 ### Articial Intelligence Usage
 
-- Reflection on key decisions where AI was used focussing on outcomes
+Reflection on key decisions where AI was used focussing on outcomes
+
+#### Overview
+
+- For this project we used AI, specifically Microsoft Copilot to assist the development process. AI was used as our UX Designer, our pair programmer, our code reviewer, and as a prompt for creating certain code functions. This decision was taken to ensure we could focus delivering our MVP for the release deadline
+
+#### Character Image
+
+- AI was used as our designer to ensure design consistency and support us at building at speed. This began with AI creating the character image for Random Jack. Using a set of prompts, we were provided with a starting image which we iterated with additional prompts. The second image produded fit our requirements:
+
+<img src="assets/images/randomjackversion1.png" alt="Random Jack AI Prompt" width="400">
+<img src="assets/images/randomjack2.png" alt="Random Jack Iterated AI prompt" width="400">
+
+#### Colour Palette
+
+- We then took the existing image for Random Jack and asked Copilot to create a colour palette that would complement the image:
+
+<img src="assets/images/AIcolourpalette.png" alt="AI Colour Palette Query" width="400">
+<img src="assets/images/Aicolourpalette2.png" alt="AI Colour Palette Query Suggestion" width="400">
+
+
+- AI was used to create the character image for Random Jack
+- We then asked AI to create a colour palette 
+
+
 - AI's involvement in Bug identification and resolutions
 - AI role in performance and UX improvements
 - Insights into how AI influenced workflow, focusing on efficiency and outcomes
@@ -289,9 +314,10 @@ Project Link: [https://github.com/KelvinC181/JJK_CI-Hackathon-1](https://github.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* []() Othneil Drew for his amazing "Best-README-Template" on [Github][readme-url]
+* []() Dillon Mccaffrey for his support as a our Tutor
+* []() Mark Briscoe for his SME support
+* []() Microsoft Copilot for being a low maintenance team member
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -338,3 +364,4 @@ Project Link: [https://github.com/KelvinC181/JJK_CI-Hackathon-1](https://github.
 [css-url]: https://en.wikipedia.org/wiki/CSS
 [js-url]: https://www.javascript.com/
 [miro-url]: https://miro.com/app/board/uXjVL_SVyms=/
+[readme-url]: https://github.com/othneildrew/Best-README-Template
