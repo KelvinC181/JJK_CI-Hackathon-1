@@ -290,9 +290,10 @@ Project Link: [https://github.com/KelvinC181/JJK_CI-Hackathon-1](https://github.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* []() Othneil Drew for his amazing "Best-README-Template" on [Github][readme-url]
+* []() Dillon Mccaffrey for his support as a our Tutor
+* []() Mark Briscoe for his SME support
+* []() Microsoft Copilot for being a low maintenance team member
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -339,3 +340,4 @@ Project Link: [https://github.com/KelvinC181/JJK_CI-Hackathon-1](https://github.
 [css-url]: https://en.wikipedia.org/wiki/CSS
 [js-url]: https://www.javascript.com/
 [miro-url]: https://miro.com/app/board/uXjVL_SVyms=/
+[readme-url]: https://github.com/othneildrew/Best-README-Template
