@@ -8,8 +8,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -24,8 +22,6 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br/>
@@ -50,29 +46,20 @@
   </p>
 </div>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
+        </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
     </li>
+    <li><a href="#design-process">Design Process</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -164,6 +151,8 @@ This is an example of how to list things you need to use the software and how to
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Design Process -->
 
 ## Design Process
 <a id= "design-process"></a>
@@ -330,6 +319,8 @@ This section will demonstrate how to use the website.
 
 ### The Game Screen
 
+This is where the game is played:
+
 <img src="assets/images/playscreen.png" alt="Play screen" width="400">
 
 - The user is able to enter their chosen number into the labelled box and submit the number. A new number will be generated as the users roll and give them the option to "subtract" or "add" to their current total:
@@ -352,18 +343,15 @@ The footer currently just copyrights the page and provides a disclaimer:
 
 <img src="assets/images/footer.png" alt="Footer" width="600">
 
-
 <!-- > _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] 1.0: MVP release - This will include the addition and subtraction functionality
-- [ ] 1.1: Add introduction and footer sections. This will include how to text and the disclaimer - [[User Story]][introduction-url]
+- [ ] 1.0: MVP release - This will include the addition and subtraction functionality - Deployed 2024/11/29
+- [ ] 1.1: Add introduction and footer sections. This will include how to text and the disclaimer - [[User Story]][introduction-url] - Deployed 2024/12/02
 - [ ] 1.2: Add difficulty modes to increase game scope - [[User Story]][difficulty-url]
     - [ ] Limit number of uses of each number entry
     - [ ] Additional fail conditions
@@ -378,8 +366,6 @@ The footer currently just copyrights the page and provides a disclaimer:
 See the [open issues](https://github.com/KelvinC181/JJK_CI-Hackathon-1/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -403,27 +389,18 @@ Don't forget to give the project a star! Thanks again!
   <img src="https://contrib.rocks/image?repo=KelvinC181/JJK_CI-Hackathon-1" alt="contrib.rocks image" />
 </a>
 
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+[Kelvin Chan][kelvin-url] <br>
+[Jamal Holt][jamal-url] <br>
+[Jeremy Greig][jeremy-url] <br>
 
 Project Link: [https://github.com/KelvinC181/JJK_CI-Hackathon-1](https://github.com/KelvinC181/JJK_CI-Hackathon-1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
@@ -432,10 +409,9 @@ Project Link: [https://github.com/KelvinC181/JJK_CI-Hackathon-1](https://github.
 * []() Dillon Mccaffrey for his support as a our Tutor
 * []() Mark Briscoe for his SME support
 * []() Microsoft Copilot for being a low maintenance team member
+* []() Code Institute for hosting the course
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -480,3 +456,6 @@ Project Link: [https://github.com/KelvinC181/JJK_CI-Hackathon-1](https://github.
 [miro-url]: https://miro.com/app/board/uXjVL_SVyms=/
 [readme-url]: https://github.com/othneildrew/Best-README-Template
 [bugs-url]: https://github.com/users/KelvinC181/projects/8/views/1?filterQuery=label%3Abug
+[kelvin-url]: https://github.com/KelvinC181
+[jamal-url]: https://github.com/jamalholt18
+[jeremy-url]: https://github.com/JeremyGreig
