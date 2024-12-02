@@ -43,6 +43,12 @@ main {
 .custom-navbar {
     background-color: var(--primary-color) !important;
     font-family: var(--primary-font);
+    display: flex;
+}
+
+#navbar-items-control {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -261,6 +267,11 @@ main {
 
 #instruction-modal {
     border: solid 3px var(--feature-color-1);
+    padding: 1em;
+}
+
+#instruction-modal h2 {
+    padding-top: 30px
 }
 
 .close-instruction {
@@ -270,4 +281,11 @@ main {
     font-size: 24px;
     cursor: pointer;
     color: var(--font-color);
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    #instruction-modal h2 {
+        padding-top: 0px
+    }
 }
