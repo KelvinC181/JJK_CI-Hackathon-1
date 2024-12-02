@@ -209,27 +209,29 @@ Reflection on key decisions where AI was used focussing on outcomes
 
 #### Overview
 
-- For this project we used AI, specifically Microsoft Copilot to assist the development process. AI was used as our UX Designer, our pair programmer, our code reviewer, and as a prompt for creating certain code functions. This decision was taken to ensure we could focus delivering our MVP for the release deadline
+- For this project we used AI, specifically Microsoft Copilot to assist the development process. AI was used as our UX Designer, our pair programmer, our code reviewer, and as a prompt for creating certain code functions. This decision was taken to ensure we could focus delivering our MVP for the release deadline. On reflection, this was a huge win for getting started on the project. 
+
+Where we did encounter some challenges, was when diagnosing an issue with a modal. Copilot was unable to determine the issue, leading to a lengthy time discovering the cause of the issue.
 
 #### Character Image
 
 - AI was used as our designer to ensure design consistency and support us at building at speed. This began with AI creating the character image for Random Jack. Using a set of prompts, we were provided with a starting image which we iterated with additional prompts. The second image produded fit our requirements:
 
-<img src="assets/images/randomjackversion1.png" alt="Random Jack AI Prompt" width="400">
-<img src="assets/images/randomjack2.png" alt="Random Jack Iterated AI prompt" width="400">
+<img src="assets/images/randomjackversion1.png" alt="Random Jack AI Prompt" width="400" height="400">
+<img src="assets/images/randomjack2.png" alt="Random Jack Iterated AI prompt" width="400" height="400">
 
 #### Colour Palette
 
 - We then took the existing image for Random Jack and asked Copilot to create a colour palette that would complement the image:
 
-<img src="assets/images/AIcolourpalette.png" alt="AI Colour Palette Query" width="400">
-<img src="assets/images/Aicolourpalette2.png" alt="AI Colour Palette Query Suggestion" width="400">
+<img src="assets/images/AIcolourpalette.png" alt="AI Colour Palette Query" width="400" height="400">
+<img src="assets/images/Aicolourpalette2.png" alt="AI Colour Palette Query Suggestion" width="400" height="400">
 
 #### Fonts
 
 - By inputting our requirements for the website font, we also asked AI to recommend which fonts would work well for a website aimed at children. They key was they would be welcoming and readable to users developing their maths skills.
 
-<img src="assets/images/AIfonts.png" alt="AI Font Suggestions" width="400">
+<img src="assets/images/AIfonts.png" alt="AI Font Suggestions" width="400" height="400">
 
 - From here we chose Comic Sans and Fredoka as our primary and secondary fonts. By choosing such a universal primary font, we have insured it will function on all user devices whilst evoking familiarity.
 
@@ -285,11 +287,16 @@ Steps to replicate:
 The ticket type as an issue raised:
 
 <img src="assets/images/bugexample.png" alt="Bug ticket type" width="600">
- 
 
-- AI's involvement in Bug identification and resolutions
+#### Known Bugs
+
+You can view all raised bugs found on the project on the [Bug Project Board][bugs-url]
+
+
 - AI role in performance and UX improvements
-- Insights into how AI influenced workflow, focusing on efficiency and outcomes
+
+#### 
+
 
 <!-- Usage EXAMPLES -->
 ## Usage
@@ -422,3 +429,4 @@ Project Link: [https://github.com/KelvinC181/JJK_CI-Hackathon-1](https://github.
 [js-url]: https://www.javascript.com/
 [miro-url]: https://miro.com/app/board/uXjVL_SVyms=/
 [readme-url]: https://github.com/othneildrew/Best-README-Template
+[bugs-url]: https://github.com/users/KelvinC181/projects/8/views/1?filterQuery=label%3Abug
