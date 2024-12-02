@@ -195,7 +195,7 @@ We initally began by creating a [Miro Board][miro-url] to kickoff our project wi
 
 ### Wireframes
 
-- We create a rough outline of our positioning within MIRO. We designed a desired state for MVP to demonstrate a target state for both the responsive and larger screen version of the page. The reasoning we took this approach was to allow us to begin coding as soon as possible, to then allow us to iterate our design once we had working code.
+- We created a rough outline of our design within MIRO. We designed a desired state for MVP to demonstrate a target state for both the responsive and larger screen version of the page. The reasoning we took this approach was to allow us to begin coding as soon as possible, to then allow us to iterate our design once we had working code.
 
   Clicking the screenshot below will take you to the Miro board.
 
@@ -205,7 +205,31 @@ We initally began by creating a [Miro Board][miro-url] to kickoff our project wi
 
 ### Articial Intelligence Usage
 
-- Reflection on key decisions where AI was used focussing on outcomes
+Reflection on key decisions where AI was used focussing on outcomes
+
+#### Overview
+
+- For this project we used AI, specifically Microsoft Copilot to assist the development process. AI was used as our UX Designer, our pair programmer, our code reviewer, and as a prompt for creating certain code functions. This decision was taken to ensure we could focus delivering our MVP for the release deadline
+
+#### Character Image
+
+- AI was used as our designer to ensure design consistency and support us at building at speed. This began with AI creating the character image for Random Jack. Using a set of prompts, we were provided with a starting image which we iterated with additional prompts. The second image produded fit our requirements:
+
+<img src="assets/images/randomjackversion1.png" alt="Random Jack AI Prompt" width="400">
+<img src="assets/images/randomjack2.png" alt="Random Jack Iterated AI prompt" width="400">
+
+#### Colour Palette
+
+- We then took the existing image for Random Jack and asked Copilot to create a colour palette that would complement the image:
+
+<img src="assets/images/AIcolourpalette.png" alt="AI Colour Palette Query" width="400">
+<img src="assets/images/Aicolourpalette2.png" alt="AI Colour Palette Query Suggestion" width="400">
+
+
+- AI was used to create the character image for Random Jack
+- We then asked AI to create a colour palette 
+
+
 - AI's involvement in Bug identification and resolutions
 - AI role in performance and UX improvements
 - Insights into how AI influenced workflow, focusing on efficiency and outcomes
