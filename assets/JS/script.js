@@ -19,6 +19,9 @@ const setButtons = () => {
     instructionLink.addEventListener("click", InstructionModal);
     const closeInstruction = document.querySelector(".close-instruction");
     closeInstruction.addEventListener("click", closeInstructionModal);
+    const navPlay = document.getElementById("nav-play");
+    navPlay.addEventListener("click", createGame);
+    window.addEventListener("click", closeInstructionModal);
 }
 
 document.addEventListener("DOMContentLoaded", setButtons);
@@ -33,9 +36,13 @@ const InstructionModal = () => {
     modal.style.display = "block";
 }
 
-const closeInstructionModal = () => {
+const closeInstructionModal = (e) => {
     const modal = document.getElementById("instruction-modal");
-    modal.style.display = "none";
+    const modalLink = document.getElementById("instruction-modal-link");
+    if (e.target !== modal && e.target !== modalLink ) {
+        modal.style.display = "none";
+    }
+ 
 }
 
 //Play Button
