@@ -61,6 +61,7 @@ const createGame = () => {
                     <div class="col-12 col-md-6 d-flex justify-content-center text-center my-3" id="input-area">
                         <div class="row">
                             <div class="col-12 my-3">
+                                <label for="input-number">Enter Your Number</label><br>
                                 <input type="number" id="input-number">
                             </div>
                             <div class="col-12 mb-3">
