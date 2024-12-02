@@ -211,7 +211,7 @@ Reflection on key decisions where AI was used focussing on outcomes
 
 - For this project we used AI, specifically Microsoft Copilot to assist the development process. AI was used as our UX Designer, our pair programmer, our code reviewer, and as a prompt for creating certain code functions. This decision was taken to ensure we could focus delivering our MVP for the release deadline. On reflection, this was a huge win for getting started on the project. 
 
-Where we did encounter some challenges, was when diagnosing an issue with a modal. Copilot was unable to determine the issue, leading to a lengthy time discovering the cause of the issue.
+- Where we did encounter some challenges, was when diagnosing an issue with a modal. Copilot was unable to determine the issue, leading to a lengthy time discovering the cause of the issue.
 
 #### Character Image
 
@@ -222,7 +222,7 @@ Where we did encounter some challenges, was when diagnosing an issue with a moda
 
 #### Colour Palette
 
-- We then took the existing image for Random Jack and asked Copilot to create a colour palette that would complement the image:
+- We then took our existing image for Random Jack and asked Copilot to create a colour palette that would complement the image:
 
 <img src="assets/images/AIcolourpalette.png" alt="AI Colour Palette Query" width="400" height="400">
 <img src="assets/images/Aicolourpalette2.png" alt="AI Colour Palette Query Suggestion" width="400" height="400">
@@ -237,7 +237,7 @@ Where we did encounter some challenges, was when diagnosing an issue with a moda
 
 #### Code Branching & Reviews
 
-By using Copilot within Github, we have leveraged Copilots ability to review code for errors. From using the below steps, we would then create a pull request to be reviewed by a teammate before merging our code into the main branch. Our outlined process to create the pull request was:
+By using Copilot within Github, we have leveraged Copilots ability to review code for errors. From the below steps, we would then create a pull request to be reviewed by a teammate before merging our code into the main branch. Our outlined process to create the pull request was:
 
 ```sh
 
@@ -272,19 +272,19 @@ For the code reviews, the code reviewer would:
 
 ### Bug Identification
 
-- The process for raising any bugs has been to raise them as issue types within Github. They are then assigned to a user to work on within their own branch. Once the code has been locally tested to resolve the issue, merged to main, and demonstrated as working, the bug ticket is moved to done.
+The process for raising any bugs has been to raise them as issue types within Github. They are then assigned to a user to work on within their own branch. Once the code has been locally tested to resolve the issue, merged to main, and demonstrated as working, the bug ticket is moved to done.
 
-The key fields for our bug tickets are:
+- The key fields for our bug tickets are:
 
 ```sh
 
-Expected Behaviour
-Actual Behaviour
+Expected Behaviour:
+Actual Behaviour:
 Steps to replicate:
 
 ```
 
-The ticket type as an issue raised:
+- The ticket type as an issue raised:
 
 <img src="assets/images/bugexample.png" alt="Bug ticket type" width="600">
 
@@ -292,18 +292,68 @@ The ticket type as an issue raised:
 
 You can view all raised bugs found on the project on the [Bug Project Board][bugs-url]
 
+#### Outstanding Bugs on Release
+
+None at present
 
 - AI role in performance and UX improvements
-
-#### 
-
 
 <!-- Usage EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This section will demonstrate how to use the website.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### Navigation
+
+ Navigation is always found at the top of the page.
+
+ <img src="assets/images/navigationlinks.png" alt="Bug ticket type" width="600">
+
+- Home will return you to home each time
+- How to play opens a modal with instructions overlayed
+
+<img src="assets/images/howtoplaymodal.png" alt="How to play" width="400">
+
+- Play triggers JavaScript to change the screen to the game screen:
+
+### Home Screen
+
+- The first screen displayed to the user introduces them to 'Random Jack' as well as providing a buttons to view more of the rules and play the game:
+
+<img src="assets/images/homescreen.png" alt="How to play" width="400">
+
+- Selecting "See More" alters the screen to display further instructions:
+
+<img src="assets/images/seemore.png" alt="See more text" width="400">
+
+- Selecting "Play" will load the gamescreen by changing the page to the new format:
+
+### The Game Screen
+
+<img src="assets/images/playscreen.png" alt="Play screen" width="400">
+
+- The user is able to enter their chosen number into the labelled box and submit the number. A new number will be generated as the users roll and give them the option to "subtract" or "add" to their current total:
+
+<img src="assets/images/numberentry.png" alt="Number entry" width="200" height="200">
+<img src="assets/images/addsubtract.png" alt="Add or subtract option" width="200" height="200">
+<img src="assets/images/gamestate.png" alt="Game state" width="200" height="200">
+
+### User Messages
+
+Messages to the user are triggered when they reach 21 (a win state), use up their 20 turns (a lose state), or when they enter an invalid number that isn't between 1 and 10:
+
+<img src="assets/images/inline error message.png" alt="In line error message" width="200" height="200">
+<img src="assets/images/winmessage.png" alt="Win message" width="200" height="200">
+<img src="assets/images/gameloss.png" alt="Game lose message" width="200" height="200">
+
+### Footer
+
+The footer currently just copyrights the page and provides a disclaimer:
+
+<img src="assets/images/footer.png" alt="Footer" width="600">
+
+
+<!-- > _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
