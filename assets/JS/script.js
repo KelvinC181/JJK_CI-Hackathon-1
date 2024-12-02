@@ -117,7 +117,7 @@ const gamePhaseOne = () => {
         const inputArea = document.getElementById("input-area"); //replace input area content
         inputArea.innerHTML = `<div class="row">
                             <div class="col-12 my-3">
-                                <div id="my-roll">${myRoll}</div>
+                                <p id="my-roll">${myRoll}</p>
                             </div>
                             <div class="col-12 mb-3">
                                 <button type="button" class="btn btn-primary" id="subtract-button">Subtract</button>
