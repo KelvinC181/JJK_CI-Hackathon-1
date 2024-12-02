@@ -225,10 +225,67 @@ Reflection on key decisions where AI was used focussing on outcomes
 <img src="assets/images/AIcolourpalette.png" alt="AI Colour Palette Query" width="400">
 <img src="assets/images/Aicolourpalette2.png" alt="AI Colour Palette Query Suggestion" width="400">
 
+#### Fonts
 
-- AI was used to create the character image for Random Jack
-- We then asked AI to create a colour palette 
+- By inputting our requirements for the website font, we also asked AI to recommend which fonts would work well for a website aimed at children. They key was they would be welcoming and readable to users developing their maths skills.
 
+<img src="assets/images/AIfonts.png" alt="AI Font Suggestions" width="400">
+
+- From here we chose Comic Sans and Fredoka as our primary and secondary fonts. By choosing such a universal primary font, we have insured it will function on all user devices whilst evoking familiarity.
+
+#### Code Branching & Reviews
+
+By using Copilot within Github, we have leveraged Copilots ability to review code for errors. From using the below steps, we would then create a pull request to be reviewed by a teammate before merging our code into the main branch. Our outlined process to create the pull request was:
+
+```sh
+
+ 1. Git checkout main
+ 2. Git pull origin main
+ 3. Git checkout -b "enter personal branch name"
+ 4. Git add . 
+ 5. git commit -m "commit message"
+ 6. git push origin
+ 7. Return to Github
+ 8. Create the pull request
+
+```
+
+For the code reviews, the code reviewer would:
+
+```sh
+
+1. Ask Copilot to review the code for errors
+```
+<img src="assets/images/codereview.png" alt="Code Review Selection" width="800">
+
+```sh
+
+2. Record any personal observations as well as the Copilot code review
+3. If it passed the review, send this back to the developer to merge and then delete their branch
+
+```
+
+<img src="assets/images/copilotcodereview2.png" alt="Code review with review" width="800">
+
+
+### Bug Identification
+
+- The process for raising any bugs has been to raise them as issue types within Github. They are then assigned to a user to work on within their own branch. Once the code has been locally tested to resolve the issue, merged to main, and demonstrated as working, the bug ticket is moved to done.
+
+The key fields for our bug tickets are:
+
+```sh
+
+Expected Behaviour
+Actual Behaviour
+Steps to replicate:
+
+```
+
+The ticket type as an issue raised:
+
+<img src="assets/images/bugexample.png" alt="Bug ticket type" width="600">
+ 
 
 - AI's involvement in Bug identification and resolutions
 - AI role in performance and UX improvements
