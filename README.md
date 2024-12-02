@@ -83,7 +83,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About the Project
 <div align="center">
-<img src="assets/images/homepage.png" alt="Homepage image" width="600" align="center">
+<img src="assets/images/responsivescreenshot.png" alt="Homepage image" width="600" align="center">
 </div>
 
 ### Project Overview
