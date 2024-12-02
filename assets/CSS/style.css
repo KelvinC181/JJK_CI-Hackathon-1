@@ -92,6 +92,7 @@ main {
 /* Input-area */
 #input-area {
     height: 100%;
+    color: var(--font-color);
 }
 
 #input-number {
