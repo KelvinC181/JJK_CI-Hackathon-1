@@ -22,6 +22,7 @@
 /* Global styles */
 html,
 body {
+    position: relative;
     height: 100%;
     margin: 0;
 }
@@ -32,8 +33,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
-    margin-top: 0.5rem;
     padding-bottom: 100px;
 }
 
@@ -57,13 +56,14 @@ main {
 /* Hero Section */
 .hero {
     font-family: var(--primary-font);
+    color: var(--font-color);
 }
 
 /* Instructions Button */
 .btn-orange {
     background-color: var(--primary-color);
     /* Use primary color variable */
-    color: white;
+    color: var(--font-color);
 }
 
 .btn-orange:hover {
@@ -72,6 +72,17 @@ main {
 }
 
 /* Game-area */
+#play-button {
+    background-color: var(--feature-color-1);
+    border: solid 1px var(--feature-color-1);
+    color: white;
+    margin-top: 1em;
+    width: 200px;
+    min-height: 50px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
 #reset-button {
     background-color: var(--feature-color-2);
     border: solid 1px var(--feature-color-2);
@@ -81,16 +92,38 @@ main {
 /* Input-area */
 #input-area {
     height: 100%;
+    color: var(--font-color);
 }
 
 #input-number {
     text-align: center;
-    border: solid 1px var(--primary-color);
-    border-radius: 4%;
+    border: solid 3px var(--primary-color);
+    border-radius: 25px;
 }
 
 #submit-button {
     width: 50%;
+    height: 50px;
+    background-color: var(--feature-color-1);
+    border: solid 1px var(--feature-color-1);
+    color: var(--font-color);
+}
+
+#my-roll {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--font-color);
+    border: solid 3px var(--primary-color);
+    border-radius: 25px;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addition-button,
+#subtract-button {
+    width: 40%;
     height: 50px;
     background-color: var(--feature-color-1);
     border: solid 1px var(--feature-color-1);
@@ -108,9 +141,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: 80px;
 }
 
-#score-counter p {
+#score-counter p,
+#turn-counter p {
     margin: 0;
 }
 
@@ -123,10 +158,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#turn-counter p {
-    margin: 0;
+    max-height: 80px;
 }
 
 
@@ -134,12 +166,6 @@ main {
 .custom-footer {
     background-color: var(--primary-color) !important;
     font-family: var(--primary-font);
-    position: fixed;
-    /* Sticky footer */
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
 }
 
 /* Footer default font size for larger screens */
