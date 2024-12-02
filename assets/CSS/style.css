@@ -1,7 +1,7 @@
 /*google font import*/
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
-/*css variables*/
+/* css variables */
 :root {
     --primary-color: #FFA500;
     /*orange*/
@@ -19,7 +19,7 @@
     --secondary-font: "Fredoka", sans-serif;
 }
 
-/*global styles*/
+/* Global styles */
 html,
 body {
     height: 100%;
@@ -37,14 +37,48 @@ main {
     padding-bottom: 100px;
 }
 
-/*game-area*/
+
+
+
+/* Navbar */
+.custom-navbar {
+    background-color: var(--primary-color) !important;
+    font-family: var(--primary-font);
+}
+
+
+/* Introduction Section */
+.introduction {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    background-color: var(--feature-color-1);
+}
+
+/* Hero Section */
+.hero {
+    font-family: var(--primary-font);
+}
+
+/* Instructions Button */
+.btn-orange {
+    background-color: var(--primary-color);
+    /* Use primary color variable */
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: var(--feature-color-2);
+    color: white;
+}
+
+/* Game-area */
 #reset-button {
     background-color: var(--feature-color-2);
     border: solid 1px var(--feature-color-2);
     color: var(--font-color);
 }
 
-/*input-area*/
+/* Input-area */
 #input-area {
     height: 100%;
 }
@@ -63,7 +97,7 @@ main {
     color: var(--font-color);
 }
 
-/*display-area*/
+/* Display-area */
 #score-counter {
     font-size: 20px;
     font-weight: bold;
@@ -95,13 +129,37 @@ main {
     margin: 0;
 }
 
-/* Navbar */
-.custom-navbar {
+
+/* Footer */
+.custom-footer {
     background-color: var(--primary-color) !important;
     font-family: var(--primary-font);
+    position: fixed;
+    /* Sticky footer */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
 }
 
-/*modals*/
+/* Footer default font size for larger screens */
+.custom-footer p {
+    font-size: 1rem;
+}
+
+
+/* Ensure proper wrapping and spacing on smaller screens */
+.custom-footer .d-flex {
+    flex-wrap: wrap;
+}
+
+/* Add some margin to the bottom of the button for spacing */
+.custom-footer .btn-link {
+    margin-bottom: 10px;
+}
+
+
+/* Modals */
 .modal-overlay {
     position: fixed;
     display: none;
@@ -175,54 +233,15 @@ main {
     color: var(--font-color);
 }
 
-/* Footer */
-.custom-footer {
-    background-color: var(--primary-color) !important;
-    font-family: var(--primary-font);
-    position: fixed;
-    /* Sticky footer */
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
+#instruction-modal {
+    border: solid 3px var(--feature-color-1);
 }
 
-/* Introduction Section */
-.introduction {
-    font-family: var(--primary-font);
-    color: var(--primary-color);
-    background-color: var(--feature-color-1);
-}
-
-/* Hero Section */
-.hero {
-    font-family: var(--primary-font);
-}
-
-/* Instructions Button */
-.btn-orange {
-    background-color: var(--primary-color);
-    /* Use primary color variable */
-    color: white;
-}
-
-.btn-orange:hover {
-    background-color: var(--feature-color-2);
-    color: white;
-}
-
-/* Footer default font size for larger screens */
-.custom-footer p {
-    font-size: 1rem;
-}
-
-
-/* Ensure proper wrapping and spacing on smaller screens */
-.custom-footer .d-flex {
-    flex-wrap: wrap;
-}
-
-/* Add some margin to the bottom of the button for spacing */
-.custom-footer .btn-link {
-    margin-bottom: 10px;
+.close-instruction {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--font-color);
 }
