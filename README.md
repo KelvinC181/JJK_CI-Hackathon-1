@@ -126,7 +126,7 @@ Further information on the design process, team structure, and ways of working a
 
 ### Built With
 
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [Bootstrap.com][Bootstrap-url]
 * [HTML][html-url]
 * [CSS][css-url]
 * [JavaScript][js-url]
@@ -149,22 +149,17 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/KelvinC181/JJK_CI-Hackathon-1.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
+3. Change git remote url to avoid accidental pushes to base project
    ```sh
-   git remote set-url origin KelvinC181/JJK_CI-Hackathon-1
+   git remote set-url origin your_project
    git remote -v # confirm the changes
    ```
 
@@ -200,7 +195,13 @@ We initally began by creating a [Miro Board][miro-url] to kickoff our project wi
 
 ### Wireframes
 
-- Add in wireframes
+- We create a rough outline of our positioning within MIRO. We designed a desired state for MVP to demonstrate a target state for both the responsive and larger screen version of the page. The reasoning we took this approach was to allow us to begin coding as soon as possible, to then allow us to iterate our design once we had working code.
+
+  Clicking the screenshot below will take you to the Miro board.
+
+  <a href="https://miro.com/app/board/uXjVL_SVyms=/?moveToWidget=3458764608573906668&cot=14">
+    <img src="assets/images/wireframes2.png" alt="Wireframes" width="600">
+  </a>
 
 ### Articial Intelligence Usage
 
