@@ -6,7 +6,7 @@ const setButtons = () => {
     for (let button of playAgain) {
         button.addEventListener("click", resetGame);
         button.addEventListener("click", closeModal);
-    };
+    }
     const mainMenu = document.getElementsByClassName("main-menu");
     for (let button of mainMenu) {
         button.addEventListener("click", () => window.location.reload());
@@ -20,7 +20,7 @@ const setButtons = () => {
     const navPlay = document.getElementById("nav-play");
     navPlay.addEventListener("click", createGame);
     window.addEventListener("click", closeInstructionModal);
-}
+};
 
 document.addEventListener("DOMContentLoaded", setButtons);
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", setButtons);
 const InstructionModal = () => {
     const modal = document.getElementById("instruction-modal");
     modal.style.display = "block";
-}
+};
 
 const closeInstructionModal = (e) => {
     const modal = document.getElementById("instruction-modal");
@@ -41,7 +41,7 @@ const closeInstructionModal = (e) => {
     if (!modal.contains(e.target) && e.target !== modalLink || e.target === closeButton) {
         modal.style.display = "none";
     }
-}
+};
 
 //Play Button
 //1.generate game html
@@ -87,7 +87,7 @@ const createGame = () => {
     //add event listener to buttons
     document.getElementById("submit-button").addEventListener("click", gamePhaseOne);
     document.getElementById("reset-button").addEventListener("click", resetGame);
-}
+};
 
 //add event listener to play button
 document.getElementById("play-button").addEventListener("click", createGame);
@@ -132,7 +132,7 @@ const gamePhaseOne = () => {
         document.getElementById("subtract-button").addEventListener("click", () => gamePhaseTwo(myRoll, "subtract"));
         document.getElementById("reset-button").addEventListener("click", resetGame);
     }
-}
+};
 
 //Add or Subtract(phase 2)
 //1. add event listener to add/subtract button
@@ -189,8 +189,8 @@ const gamePhaseTwo = (myRoll, action) => {
         //re-add event listeners to buttons
         document.getElementById("submit-button").addEventListener("click", gamePhaseOne);
         document.getElementById("reset-button").addEventListener("click", resetGame);
-    };
-}
+    }
+};
 
 //resetting the game
 //1. add event listener to reset button
@@ -226,7 +226,7 @@ const resetGame = () => {
     //re-add event listener to buttons
     document.getElementById("submit-button").addEventListener("click", gamePhaseOne);
     document.getElementById("reset-button").addEventListener("click", resetGame);
-}
+};
 
 //win and lose modals
 //1.detect which to trigger
@@ -250,7 +250,7 @@ const showWinModal = () => {
     modal.style.display = "block";
     const background = document.querySelector(".modal-overlay");
     background.classList.add("show");
-}
+};
 
 /**
  * shows the lose modal
@@ -260,7 +260,7 @@ const showLoseModal = () => {
     modal.style.display = "block";
     const background = document.querySelector(".modal-overlay");
     background.classList.add("show");
-}
+};
 
 /**
  * hides modals
@@ -274,5 +274,4 @@ const closeModal = () => {
     background.classList.remove("show");
     //resets game if modal is closed
     resetGame();
-}
-
+};
