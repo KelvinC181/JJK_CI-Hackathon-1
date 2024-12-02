@@ -32,13 +32,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">How to Play</a>
+                            <a id="instruction-modal-link" class="nav-link" href="#">How to Play</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Play!</a>
+                            <a id="nav-play" class="nav-link" href="#">Play!</a>
                         </li>
                     </ul>
 
@@ -117,8 +117,17 @@
                 <P>GAME OVER</P>
                 <button type="button" class="btn mb-2 play-again">Play Again</button>
                 <button type="button" class="btn mb-2 main-menu">Main Menu</button>                
-            </div>
-        </div>    
+            </div>    
+        </div>
+        
+        <div id="instruction-modal" class="modals">
+            <span class="close-instruction">X</span>
+            <P>How to Play</P>
+            <p>Start by choosing a number between 1 and 10!</p>
+            <p>Random Jack will then give you a random number for your roll</p>
+            <p>Decide if you want to add or subtract the number from your score</p>
+            <p>Get your score to 21 before you run out of turns to win!</p>
+        </div>
         
         
     </main>

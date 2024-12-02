@@ -15,9 +15,28 @@ const setButtons = () => {
     for (let button of close) {
         button.addEventListener("click", closeModal);
     }
+    const instructionLink = document.getElementById("instruction-modal-link");
+    instructionLink.addEventListener("click", InstructionModal);
+    const closeInstruction = document.querySelector(".close-instruction");
+    closeInstruction.addEventListener("click", closeInstructionModal);
 }
 
 document.addEventListener("DOMContentLoaded", setButtons);
+
+//Instruction Modal
+//1. add event listener to navbar how to play
+//2. unhide modal
+//3. close modal button
+
+const InstructionModal = () => {
+    const modal = document.getElementById("instruction-modal");
+    modal.style.display = "block";
+}
+
+const closeInstructionModal = () => {
+    const modal = document.getElementById("instruction-modal");
+    modal.style.display = "none";
+}
 
 //Play Button
 //1.generate game html
@@ -251,3 +270,4 @@ const closeModal = () => {
     //resets game if modal is closed
     resetGame();
 }
+
